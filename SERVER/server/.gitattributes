@@ -1,0 +1,18 @@
+/mvnw text eol=lf
+*.cmd text eol=crlf
+
+node_modules/
+*.log
+.env
+dist/
+build/
+
+SERVER\server\SurgerySchedulerSA\data\out\*.csv
+SERVER\server\SurgerySchedulerSA\data\out\Backup4Guidelines\*.csv
+
+
+# 全域規則：所有檔案一律以 UTF-8 文字處理
+* text=auto eol=lf working-tree-encoding=UTF-8
+
+# 排除 SERVER/server/ORSM 2025 目錄，不套用 UTF-8 編碼
+"SERVER/server/ORSM 2025/**" -text -working-tree-encoding

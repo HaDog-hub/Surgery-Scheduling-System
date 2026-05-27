@@ -1,0 +1,187 @@
+# Security: do not publish local secrets, private datasets, or generated output.
+SERVER/server/src/main/resources/application.properties
+SERVER/server/target/classes/application.properties
+SERVER/server/target/classes/application.properties.template
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+id_rsa
+id_dsa
+credentials
+secrets
+*.rar
+*.7z
+*.zip
+*.tar
+*.gz
+*.class
+*.pptx
+target/
+build/
+dist/
+node_modules/
+SERVER/server/ORSM 2025/
+SERVER/server/snapshots/
+SERVER/server/SurgerySchedulerSA/data/in/
+SERVER/server/SurgerySchedulerSA/data/out/
+SERVER/server/Surgery-Scheduling-SA_SGDR/data/in/
+SERVER/server/Surgery-Scheduling-SA_SGDR/data/out/
+SERVER/server/Surgery-Scheduling-SA_SGDR/configs/*.csv
+SERVER/server/Surgery-Scheduling-SA_SGDR/out.txt
+SERVER/server/Surgery-Scheduling-SA_SGDR/output.txt
+!docs/screenshots/*.png
+!docs/screenshots/*.jpg
+
+# # # Logs
+# # logs
+# # *.log
+# # npm-debug.log*
+# # yarn-debug.log*
+# # yarn-error.log*
+# # pnpm-debug.log*
+# # lerna-debug.log*
+
+# # node_modules
+# # dist
+# # dist-ssr
+# # *.local
+
+# # # Editor directories and files
+# # .vscode/*
+# # !.vscode/extensions.json
+# # .idea
+# # .DS_Store
+# # *.suo
+# # *.ntvs*
+# # *.njsproj
+# # *.sln
+# # *.sw?
+# # *.xlsx
+# # *.jpg
+# # *.png
+# # *.csv
+# # # IntelliJ
+# SERVER\server\ORSM 2025\*.csv
+# SERVER\server\ORSM 2025\*.xlsx
+# SERVER\server\ORSM 2025\*.jpg
+# SERVER\server\ORSM 2025\*.pdf
+# SERVER\server\ORSM 2025\*.png
+# SERVER\server\ORSM 2025\SchedulingResults\*.csv
+# SERVER\server\ORSM 2025\TimeTable\*.csv
+# SERVER\server\ORSM 2025\PdfFiles\*.pdf
+# SERVER\server\ORSM 2025\PdfFiles\*.jpg
+# \SERVER\server\ORSM 2025\Backup4Guidelines\*csv
+# SERVER/server/src/main/resources/application.properties
+# SERVER/server/pom.xml
+
+# node_modules
+
+# SERVER\server\SurgerySchedulerSA\data\out\*.csv
+# SERVER\server\SurgerySchedulerSA\data\out\Backup4Guidelines\*.csv
+
+
+
+
+########################################
+# 一般忽略規則
+########################################
+
+HELP.md
+target/
+build/
+dist/
+node_modules/
+.vscode/
+.idea
+*.iws
+*.iml
+*.ipr
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+.apt_generated
+.nb-gradle/
+nbbuild/
+dist/
+nbdist/
+nbproject/private/
+
+# 暫存檔、日誌、編譯物
+*.log
+*.bin
+*.env
+*.xlsx
+*.jpg
+*.pdf
+*.png
+*.csv
+
+# 允許 docs/screenshots 底下的圖片
+!docs/screenshots/*.png
+!docs/screenshots/*.jpg
+.DS_Store
+
+# VS Code 特定
+.vscode/*
+!.vscode/extensions.json
+
+# 排除部分檔案夾（例如目標 build/ 或 target/ 但保留特定路徑內的 target/build）
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+########################################
+# Java/Maven/Gradle 專案特定
+########################################
+
+!.mvn/wrapper/maven-wrapper.jar
+!SERVER/server/pom.xml
+SERVER/server/src/main/resources/application.properties
+
+########################################
+# 特定專案資料夾／報表／圖片／暫存
+########################################
+
+# ORSM 2025 產生物與資源
+SERVER/server/ORSM 2025/*.csv
+SERVER/server/ORSM 2025/*.xlsx
+SERVER/server/ORSM 2025/*.jpg
+SERVER/server/ORSM 2025/*.pdf
+SERVER/server/ORSM 2025/*.png
+
+SERVER/server/ORSM 2025/SchedulingResults/*.csv
+SERVER/server/ORSM 2025/TimeTable/*.csv
+SERVER/server/ORSM 2025/PdfFiles/*.pdf
+SERVER/server/ORSM 2025/PdfFiles/*.jpg
+SERVER/server/ORSM 2025/Backup4Guidelines/*.csv
+
+SERVER/server/SurgerySchedulerSA/data/out/*.csv
+SERVER/server/SurgerySchedulerSA/data/out/Backup4Guidelines/*.csv
+SERVER/server/SurgerySchedulerSA/data/in/*.csv
+########################################
+# Node.js 類專案
+########################################
+
+node_modules/.cache
+node_modules/.env
+node_modules/dist/
+node_modules/build/
+node_modules/.vscode/
+
+########################################
+# 重複或容易誤植的規則修正
+########################################
+
+
+
+# 只保留一份路徑格式（/ 跟 \ 請統一，建議全用 /）
+# 你可以根據實際專案環境調整斜線方向
+
