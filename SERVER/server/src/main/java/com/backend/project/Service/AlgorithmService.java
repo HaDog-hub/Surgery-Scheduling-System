@@ -47,14 +47,14 @@ import com.opencsv.exceptions.CsvValidationException;
 @Service
 public class AlgorithmService {
 
-    private static final String BATCH_FILE_PATH = "Surgery-Scheduling-SA_SGDR/runScheduler.bat";
+    private static final String BATCH_FILE_PATH = "SurgerySchedulerSA/runScheduler.bat";
 
     @Value("${time-table.export.path}")
     private String TIME_TABLE_FILE_PATH;
 
-    private String ORSM_FILE_PATH = "Surgery-Scheduling-SA_SGDR/data/in";
+    private String ORSM_FILE_PATH = "SurgerySchedulerSA/data/in";
 
-    private String ORSM_GUIDELINES_FILE_PATH = "Surgery-Scheduling-SA_SGDR/data/out";
+    private String ORSM_GUIDELINES_FILE_PATH = "SurgerySchedulerSA/data/out";
 
     @Autowired
     private SurgeryRepository surgeryRepository;
